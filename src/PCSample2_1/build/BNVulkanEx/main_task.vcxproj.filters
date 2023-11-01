@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="util">
+      <UniqueIdentifier>{5456270e-31bc-4bf3-bc4b-a08baed5b8fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bndev">
+      <UniqueIdentifier>{a0d92b21-0440-4643-a2d9-784befd94440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="legencyUtil">
+      <UniqueIdentifier>{123ce854-5647-4054-b12a-4381059c312e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{f520e2c4-ce81-4421-be09-f3273888ee78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\BNVulkanEx\main_task\main_task.cpp">
+      <Filter>bndev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\main_task\MyVulkanManager.cpp">
+      <Filter>bndev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\main_task\ShaderCompileUtil.cpp">
+      <Filter>bndev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\main_task\ShaderQueueSuit_Common.cpp">
+      <Filter>bndev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\main_task\ThreadTask.cpp">
+      <Filter>bndev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\main_task\TriangleData.cpp">
+      <Filter>bndev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\util\DrawableObjectCommon.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\util\FileUtil.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\util\HelpFunction.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\util\MatrixState3D.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\util\FPSUtil.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\legencyUtil\util.cpp">
+      <Filter>legencyUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BNVulkanEx\main_task\PathData.cpp">
+      <Filter>bndev</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\BNVulkanEx\main_task\MyVulkanManager.h">
+      <Filter>bndev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\main_task\ShaderCompileUtil.h">
+      <Filter>bndev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\main_task\ShaderQueueSuit_Common.h">
+      <Filter>bndev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\main_task\ThreadTask.h">
+      <Filter>bndev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\main_task\TriangleData.h">
+      <Filter>bndev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\util\DrawableObjectCommon.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\util\FileUtil.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\util\HelpFunction.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\util\Matrix.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\util\MatrixState3D.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\util\FPSUtil.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\legencyUtil\util.hpp">
+      <Filter>legencyUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BNVulkanEx\main_task\PathData.h">
+      <Filter>bndev</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\BNVulkanEx\shaders\commonTexLight.frag.spv">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\BNVulkanEx\shaders\commonTexLight.vert.spv">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\Sample2_1用着色器预编译命令脚本及着色器源代码\commonTexLight.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\Sample2_1用着色器预编译命令脚本及着色器源代码\commonTexLight.vert">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

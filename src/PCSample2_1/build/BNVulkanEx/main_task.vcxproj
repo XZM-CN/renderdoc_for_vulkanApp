@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{9E7A1929-60B3-4F23-91EE-3B824BD36343}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>PCSample2_1</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\bin\$(Configuration)\Vulkan_DPE\$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\bin\$(Configuration)\Vulkan_DPE\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">main_task.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">main_task</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectDir)\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">main_task.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">main_task</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectDir)\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">main_task.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">main_task</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:/code/Vulkan/src/glslang/;$(VULKAN_SDK)\spirv-tools\include;$(VULKAN_SDK)\Include;$(SolutionDir)..\BNVulkanEx\utils;$(ProjectDir)..\..\BNVulkanEx\data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>VK_DYNAMIC_STATE_RANGE_SIZE=10;NOMINMAX;WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;VULKAN_SAMPLES_BASE_DIR="$(ProjectDir)..\..\";VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;VULKAN_SAMPLES_BASE_DIR=\"$(ProjectDir)..\..\ ";VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(VULKAN_SDK)\Lib\vulkan-1.lib;E:/code/Vulkan/bin/glslang/glslang/Debug/glslangd.lib;E:/code/Vulkan/bin/glslang/glslang/Debug/MachineIndependentd.lib;E:/code/Vulkan/bin/glslang/glslang/Debug/GenericCodeGend.lib;E:/code/Vulkan/bin/glslang/OGLCompilersDLL/Debug/OGLCompilerd.lib;E:/code/Vulkan/bin/glslang/glslang/OSDependent/Windows/Debug/OSDependentd.lib;E:/code/Vulkan/bin/glslang/hlsl/Debug/HLSLd.lib;E:/code/Vulkan/bin/glslang/SPIRV/Debug/SPIRVd.lib;E:/code/Vulkan/bin/glslang/External/spirv-tools/source/Debug/SPIRV-Toolsd.lib;E:/code/Vulkan/bin/glslang/External/spirv-tools/source/opt/Debug/SPIRV-Tools-optd.lib;E:/code/Vulkan/bin/glslang/SPIRV/Debug/SPVRemapperd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>
+      </ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;VULKAN_SAMPLES_BASE_DIR="$(ProjectDir)../../";VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;VULKAN_SAMPLES_BASE_DIR=\"$(ProjectDir)../../\";VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(VULKAN_SDK)\glslang\build\glslang\Release\glslang.lib;$(VULKAN_SDK)\glslang\build\OGLCompilersDLL\Release\OGLCompiler.lib;$(VULKAN_SDK)\glslang\build\glslang\OSDependent\Windows\Release\OSDependent.lib;$(VULKAN_SDK)\glslang\build\hlsl\Release\HLSL.lib;$(VULKAN_SDK)\glslang\build\SPIRV\Release\SPIRV.lib;$(VULKAN_SDK)\Lib\vulkan-1.lib;$(VULKAN_SDK)\glslang\build\External\spirv-tools\source\Release\SPIRV-Tools.lib;$(VULKAN_SDK)\glslang\build\External\spirv-tools\source\opt\Release\SPIRV-Tools-opt.lib;$(VULKAN_SDK)\glslang\build\SPIRV\Release\SPVRemapper.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)../../build/BNVulkanEx/Release/main_task.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)../../build/BNVulkanEx/Release/main_task.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;VULKAN_SAMPLES_BASE_DIR="$(ProjectDir)../../";VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;VULKAN_SAMPLES_BASE_DIR=\"$(ProjectDir)../../\";VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(VULKAN_SDK)\glslang\build\glslang\Release\glslang.lib;$(VULKAN_SDK)\glslang\build\OGLCompilersDLL\Release\OGLCompiler.lib;$(VULKAN_SDK)\glslang\build\glslang\OSDependent\Windows\Release\OSDependent.lib;$(VULKAN_SDK)\glslang\build\hlsl\Release\HLSL.lib;$(VULKAN_SDK)\glslang\build\SPIRV\Release\SPIRV.lib;$(VULKAN_SDK)\Lib\vulkan-1.lib;$(VULKAN_SDK)\glslang\build\External\spirv-tools\source\Release\SPIRV-Tools.lib;$(VULKAN_SDK)\glslang\build\External\spirv-tools\source\opt\Release\SPIRV-Tools-opt.lib;$(VULKAN_SDK)\glslang\build\SPIRV\Release\SPVRemapper.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)../../build/BNVulkanEx/MinSizeRel/main_task.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)../../build/BNVulkanEx/MinSizeRel/main_task.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;VULKAN_SAMPLES_BASE_DIR="$(ProjectDir)../../";VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;VULKAN_SAMPLES_BASE_DIR=\"$(ProjectDir)../../\";VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\BNVulkanEx\utils;$(VULKAN_SDK)\Include;$(ProjectDir)..\..\BNVulkanEx\data;$(VULKAN_SDK)\glslang;$(VULKAN_SDK)\spirv-tools\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(VULKAN_SDK)\glslang\build\glslang\Release\glslang.lib;$(VULKAN_SDK)\glslang\build\OGLCompilersDLL\Release\OGLCompiler.lib;$(VULKAN_SDK)\glslang\build\glslang\OSDependent\Windows\Release\OSDependent.lib;$(VULKAN_SDK)\glslang\build\hlsl\Release\HLSL.lib;$(VULKAN_SDK)\glslang\build\SPIRV\Release\SPIRV.lib;$(VULKAN_SDK)\Lib\vulkan-1.lib;$(VULKAN_SDK)\glslang\build\External\spirv-tools\source\Release\SPIRV-Tools.lib;$(VULKAN_SDK)\glslang\build\External\spirv-tools\source\opt\Release\SPIRV-Tools-opt.lib;$(VULKAN_SDK)\glslang\build\SPIRV\Release\SPVRemapper.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)../../build/BNVulkanEx/RelWithDebInfo/main_task.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)../../build/BNVulkanEx/RelWithDebInfo/main_task.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\BNVulkanEx\legencyUtil\util.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\main_task\main_task.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\main_task\MyVulkanManager.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\main_task\PathData.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\main_task\ShaderCompileUtil.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\main_task\ShaderQueueSuit_Common.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\main_task\ThreadTask.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\main_task\TriangleData.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\util\DrawableObjectCommon.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\util\FileUtil.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\util\FPSUtil.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\util\HelpFunction.cpp" />
+    <ClCompile Include="..\..\BNVulkanEx\util\MatrixState3D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\BNVulkanEx\legencyUtil\util.hpp" />
+    <ClInclude Include="..\..\BNVulkanEx\main_task\MyVulkanManager.h" />
+    <ClInclude Include="..\..\BNVulkanEx\main_task\PathData.h" />
+    <ClInclude Include="..\..\BNVulkanEx\main_task\ShaderCompileUtil.h" />
+    <ClInclude Include="..\..\BNVulkanEx\main_task\ShaderQueueSuit_Common.h" />
+    <ClInclude Include="..\..\BNVulkanEx\main_task\ThreadTask.h" />
+    <ClInclude Include="..\..\BNVulkanEx\main_task\TriangleData.h" />
+    <ClInclude Include="..\..\BNVulkanEx\util\DrawableObjectCommon.h" />
+    <ClInclude Include="..\..\BNVulkanEx\util\FileUtil.h" />
+    <ClInclude Include="..\..\BNVulkanEx\util\FPSUtil.h" />
+    <ClInclude Include="..\..\BNVulkanEx\util\HelpFunction.h" />
+    <ClInclude Include="..\..\BNVulkanEx\util\Matrix.h" />
+    <ClInclude Include="..\..\BNVulkanEx\util\MatrixState3D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Sample2_1用着色器预编译命令脚本及着色器源代码\commonTexLight.frag" />
+    <None Include="..\..\..\Sample2_1用着色器预编译命令脚本及着色器源代码\commonTexLight.vert" />
+    <None Include="..\..\BNVulkanEx\shaders\commonTexLight.frag.spv" />
+    <None Include="..\..\BNVulkanEx\shaders\commonTexLight.vert.spv" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
